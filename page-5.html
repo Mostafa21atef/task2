@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="icon" href="car.png">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<style>
+    body{
+        direction: rtl;
+    }
+</style>
+<body>
+    <button id="myButton">انقر هنا</button>
+    <div id="myDiv" style="display: none;">مرحبا بكم فى موقعنا</div>
+
+    <script>
+        // استخدام jQuery للتحكم في العناصر
+        $(document).ready(function() {
+            $("#myButton").click(function() {
+                $("#myDiv").show();
+            });
+        });
+    </script>
+</body>
+</html>
